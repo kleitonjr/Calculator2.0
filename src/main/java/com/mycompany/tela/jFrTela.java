@@ -377,39 +377,75 @@ public class jFrTela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn8KeyPressed
-        digitaNum("8");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_8;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "8");
+        }
     }//GEN-LAST:event_btn8KeyPressed
 
     private void btn7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn7KeyPressed
-        digitaNum("7");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_7;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "7");
+        }
     }//GEN-LAST:event_btn7KeyPressed
 
     private void btn9KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn9KeyPressed
-        digitaNum("9");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_9;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "9");
+        }
     }//GEN-LAST:event_btn9KeyPressed
 
     private void btn4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn4KeyPressed
-        digitaNum("4");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_4;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "4");
+        }
     }//GEN-LAST:event_btn4KeyPressed
 
     private void btn5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn5KeyPressed
-        digitaNum("5");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_5;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "5");
+        }
     }//GEN-LAST:event_btn5KeyPressed
 
     private void btn6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn6KeyPressed
-        digitaNum("6");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_6;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "6");
+        }
     }//GEN-LAST:event_btn6KeyPressed
 
     private void btn1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn1KeyPressed
-        digitaNum("1");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_1;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "1");
+        }
     }//GEN-LAST:event_btn1KeyPressed
 
     private void btn2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn2KeyPressed
-        digitaNum("2");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_2;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "2");
+        }
     }//GEN-LAST:event_btn2KeyPressed
 
     private void btn3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn3KeyPressed
-        digitaNum("3");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_3;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "3");
+        }
     }//GEN-LAST:event_btn3KeyPressed
 
     private void btnIgualKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnIgualKeyPressed
@@ -430,7 +466,7 @@ public class jFrTela extends javax.swing.JFrame {
     private void btnACKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnACKeyPressed
         limpa();
     }//GEN-LAST:event_btnACKeyPressed
-    
+
     private void digitaNum(String num){
         tfResult.setText(tfResult.getText() + num);
     } 
@@ -439,15 +475,22 @@ public class jFrTela extends javax.swing.JFrame {
     }
     
     private void btnMaisKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnMaisKeyPressed
-       num1 = Double.parseDouble(tfResult.getText());
+       int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_PLUS;
+        if(cod == tecla ){
+            
+        }
+        num1 = Double.parseDouble(tfResult.getText());
        limpa();
        op = "sum";
     }//GEN-LAST:event_btnMaisKeyPressed
 
     private void btnDivKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnDivKeyPressed
-       num1 = Double.parseDouble(tfResult.getText());
-       limpa();
-       op = "div";
+       int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_MINUS;
+        if(cod == tecla ){
+            
+        }
     }//GEN-LAST:event_btnDivKeyPressed
 
     private void btnVirgulaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnVirgulaKeyPressed
@@ -477,7 +520,11 @@ public class jFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_tfResultActionPerformed
 
     private void btn0KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn0KeyPressed
-        digitaNum("0");
+        int cod = evt.getKeyCode();
+        int tecla = KeyEvent.VK_0;
+        if(cod == tecla ){
+            tfResult.setText(tfResult.getText() + "0");
+        }
     }//GEN-LAST:event_btn0KeyPressed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed

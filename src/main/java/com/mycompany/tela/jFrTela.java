@@ -41,6 +41,7 @@ public class jFrTela extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        tfResult.setEditable(false);
         tfResult.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         tfResult.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         tfResult.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +51,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         btn8.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn8KeyPressed(evt);
@@ -57,6 +63,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         btn7.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn7KeyPressed(evt);
@@ -64,6 +75,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         btn9.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn9KeyPressed(evt);
@@ -71,6 +87,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         btn4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn4KeyPressed(evt);
@@ -78,6 +99,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         btn5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn5KeyPressed(evt);
@@ -85,6 +111,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         btn6.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn6KeyPressed(evt);
@@ -92,6 +123,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
         btn1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn1KeyPressed(evt);
@@ -99,6 +135,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
         btn2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn2KeyPressed(evt);
@@ -106,6 +147,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
         btn3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btn3KeyPressed(evt);
@@ -113,9 +159,9 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btn0.setText("0");
-        btn0.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btn0MousePressed(evt);
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
             }
         });
         btn0.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -125,6 +171,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnIgual.setText("=");
+        btnIgual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIgualActionPerformed(evt);
+            }
+        });
         btnIgual.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnIgualKeyPressed(evt);
@@ -132,6 +183,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnAC.setText("AC");
+        btnAC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnACActionPerformed(evt);
+            }
+        });
         btnAC.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnACKeyPressed(evt);
@@ -139,6 +195,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnMais.setText("+");
+        btnMais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMaisActionPerformed(evt);
+            }
+        });
         btnMais.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnMaisKeyPressed(evt);
@@ -146,6 +207,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnDiv.setText("/");
+        btnDiv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDivActionPerformed(evt);
+            }
+        });
         btnDiv.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnDivKeyPressed(evt);
@@ -153,6 +219,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnVirgula.setText(",");
+        btnVirgula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVirgulaActionPerformed(evt);
+            }
+        });
         btnVirgula.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnVirgulaKeyPressed(evt);
@@ -160,6 +231,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnNeg.setText("+/-");
+        btnNeg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNegActionPerformed(evt);
+            }
+        });
         btnNeg.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnNegKeyPressed(evt);
@@ -167,6 +243,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnMuilt.setText("*");
+        btnMuilt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMuiltActionPerformed(evt);
+            }
+        });
         btnMuilt.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnMuiltKeyPressed(evt);
@@ -174,6 +255,11 @@ public class jFrTela extends javax.swing.JFrame {
         });
 
         btnMenos.setText("-");
+        btnMenos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenosActionPerformed(evt);
+            }
+        });
         btnMenos.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 btnMenosKeyPressed(evt);
@@ -326,14 +412,6 @@ public class jFrTela extends javax.swing.JFrame {
         digitaNum("3");
     }//GEN-LAST:event_btn3KeyPressed
 
-    private void btn0KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn0KeyPressed
-        evt.getKeyCode();
-        int btn0 = KeyEvent.VK_0;
-        if(evt.getKeyCode() == btn0){
-            digitaNum("0");
-        }
-    }//GEN-LAST:event_btn0KeyPressed
-
     private void btnIgualKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnIgualKeyPressed
         num2 = Double.parseDouble(tfResult.getText());
         
@@ -354,7 +432,7 @@ public class jFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_btnACKeyPressed
     
     private void digitaNum(String num){
-            tfResult.setText(tfResult.getText() + num);
+        tfResult.setText(tfResult.getText() + num);
     } 
     private void limpa(){
         tfResult.setText("");
@@ -398,9 +476,102 @@ public class jFrTela extends javax.swing.JFrame {
         requestFocus();
     }//GEN-LAST:event_tfResultActionPerformed
 
-    private void btn0MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn0MousePressed
+    private void btn0KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btn0KeyPressed
+        digitaNum("0");
+    }//GEN-LAST:event_btn0KeyPressed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        digitaNum("9");
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        digitaNum("8");
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        digitaNum("7");
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        digitaNum("6");
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        digitaNum("5");
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        digitaNum("4");
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        digitaNum("3");
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        digitaNum("2");
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        digitaNum("1");
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
        digitaNum("0");
-    }//GEN-LAST:event_btn0MousePressed
+    }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btnMaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMaisActionPerformed
+       num1 = Double.parseDouble(tfResult.getText());
+       limpa();
+       op = "sum";
+    }//GEN-LAST:event_btnMaisActionPerformed
+
+    private void btnMenosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenosActionPerformed
+       num1 = Double.parseDouble(tfResult.getText());
+       limpa();
+       op = "minus";
+    }//GEN-LAST:event_btnMenosActionPerformed
+
+    private void btnMuiltActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMuiltActionPerformed
+       num1 = Double.parseDouble(tfResult.getText());
+       limpa();
+       op = "multi";
+    }//GEN-LAST:event_btnMuiltActionPerformed
+
+    private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
+       num1 = Double.parseDouble(tfResult.getText());
+       limpa();
+       op = "div";
+    }//GEN-LAST:event_btnDivActionPerformed
+
+    private void btnNegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNegActionPerformed
+      num1 = Double.parseDouble(tfResult.getText());
+      num1 = num1 *(-1);
+      tfResult.setText(String.valueOf(num1));
+    }//GEN-LAST:event_btnNegActionPerformed
+
+    private void btnACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnACActionPerformed
+        limpa();
+    }//GEN-LAST:event_btnACActionPerformed
+
+    private void btnIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIgualActionPerformed
+        num2 = Double.parseDouble(tfResult.getText());
+        
+        if(op == "sum"){
+            tfResult.setText(String.format("%.2f",num1 + num2));
+        }else if(op == "minus"){
+            tfResult.setText(String.format("%.2f",num1 - num2));
+        }else if(op == "multi"){
+            tfResult.setText(String.format("%.2f",num1 * num2));
+        }else if(op == "div"){
+            tfResult.setText(String.format("%.2f",num1 / num2));
+        }
+    
+    }//GEN-LAST:event_btnIgualActionPerformed
+
+    private void btnVirgulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVirgulaActionPerformed
+       digitaNum(",");
+    }//GEN-LAST:event_btnVirgulaActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn0;

@@ -1,7 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+//Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+//Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+
 package com.mycompany.tela;
 
 import java.awt.event.KeyEvent;
@@ -475,26 +474,32 @@ public class jFrTela extends javax.swing.JFrame {
     }
     
     private void btnMaisKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnMaisKeyPressed
-       int cod = evt.getKeyCode();
+       num1 = Double.parseDouble(tfResult.getText());
+       int opConv = Integer.parseInt(op);
+        opConv = evt.getKeyCode();
         int tecla = KeyEvent.VK_PLUS;
-        if(cod == tecla ){
-            
+        if(opConv == tecla ){
+            op = "sum";
         }
-        num1 = Double.parseDouble(tfResult.getText());
-       limpa();
-       op = "sum";
     }//GEN-LAST:event_btnMaisKeyPressed
 
     private void btnDivKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnDivKeyPressed
-       int cod = evt.getKeyCode();
-        int tecla = KeyEvent.VK_MINUS;
-        if(cod == tecla ){
-            
+        num1 = Double.parseDouble(tfResult.getText());
+        int opConv = Integer.parseInt(op);
+        opConv = evt.getKeyCode();
+        int tecla = KeyEvent.VK_DIVIDE;
+        if(opConv == tecla ){
+            op = "div";
         }
     }//GEN-LAST:event_btnDivKeyPressed
 
     private void btnVirgulaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnVirgulaKeyPressed
-        digitaNum(",");
+        int opConv = Integer.parseInt(op);
+        opConv = evt.getKeyCode();
+        int tecla = KeyEvent.VK_COMMA;
+        if(opConv == tecla ){
+            digitaNum(",");
+        }       
     }//GEN-LAST:event_btnVirgulaKeyPressed
 
     private void btnNegKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnNegKeyPressed
@@ -504,15 +509,23 @@ public class jFrTela extends javax.swing.JFrame {
     }//GEN-LAST:event_btnNegKeyPressed
 
     private void btnMuiltKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnMuiltKeyPressed
-       num1 = Double.parseDouble(tfResult.getText());
-       limpa();
-       op = "multi";
+        num1 = Double.parseDouble(tfResult.getText());
+        int opConv = Integer.parseInt(op);
+        opConv = evt.getKeyCode();
+        int tecla = KeyEvent.VK_MULTIPLY;
+        if(opConv == tecla ){
+            op = "multi";
+        }
     }//GEN-LAST:event_btnMuiltKeyPressed
 
     private void btnMenosKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btnMenosKeyPressed
-       num1 = Double.parseDouble(tfResult.getText());
-       limpa();
-       op = "minus";
+        num1 = Double.parseDouble(tfResult.getText());
+        int opConv = Integer.parseInt(op);
+        opConv = evt.getKeyCode();
+        int tecla = KeyEvent.VK_MINUS;
+        if(opConv == tecla ){
+            op = "minus";
+        }
     }//GEN-LAST:event_btnMenosKeyPressed
 
     private void tfResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfResultActionPerformed
